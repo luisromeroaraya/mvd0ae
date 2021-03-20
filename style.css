@@ -1,19 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
     scroll-behavior: smooth;
+    color: #fff;
 }
 
 body{
     font-size: 100%;
     font-family: sans-serif;
-}
-
-div, section, span, ul, li, a, header{
-    box-sizing: border-box;
 }
 
 /*css reset*/
@@ -26,6 +24,15 @@ header{
     align-items: center;
     position: fixed;
     z-index: 999;
+    background: black;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 
 #menu li{
@@ -45,34 +52,28 @@ section{
     float: left;
     height: 100vh;
     position: relative;
+    margin: auto;
+    text-align: center;
 }
 
 #home{
-   background-color: #59405C;
+   background-color: black;
 }
 
-#about{
-     background-color: #ED6663;
+#photography{
+    background-color: black;
 }
 
-#product{
-     background-color: #B52B65;
+#video{
+    background-color: black;
 }
 
-#pricing{
-     background-color: #3C2C3E;
+#sound{
+    background-color: black;
 }
 
 #contact{
-     background-color: #B52B65;
-}
-
-h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
+    background-color: black;
 }
 
 
