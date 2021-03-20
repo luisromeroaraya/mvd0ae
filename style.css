@@ -18,14 +18,24 @@ body{
 /*css reset*/
 
 header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 50px;
-    align-items: center;
     position: fixed;
-    z-index: 999;
+    width: 100%;
+    padding: 10px;
     background: black;
+    z-index: 999;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .max-width {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #menu li{
@@ -80,7 +90,7 @@ section{
     background: black;
 }
 
-article{
+.container{
     width: 80%;
     max-width: 600px;
     margin: auto;
@@ -88,6 +98,17 @@ article{
     text-align: center;
 }
 
+#photographyTextContainer{
+    display: flex;
+    text-align: left;
+}
 
+#photographyES{
+    flex: 1;
+    margin: 10px;
+}
 
-
+#photographyEN{
+    flex: 1;
+    margin: 10px;
+}
