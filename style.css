@@ -6,7 +6,8 @@
 
 html{
     scroll-behavior: smooth;
-    color: #fff;
+    background: black;
+    color: white;
 }
 
 body{
@@ -20,19 +21,11 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 10px 50px;
     align-items: center;
     position: fixed;
     z-index: 999;
     background: black;
-}
-
-h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
 }
 
 #menu li{
@@ -41,43 +34,59 @@ h1{
     margin: 20px;
 }
 
-#menu li a{
-    color: #fff;
+a{
+    color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
+a:hover{
+    color: rgb(100, 100, 100);
+}
+
 section{
+    display: flex;
     width: 100%;
     float: left;
     height: 100vh;
     position: relative;
     margin: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #home{
-   background-color: black;
+    background: black;
 }
 
 #photography{
-    background-color: black;
+    background: url(images/photo.jpg) no-repeat center;
+    background-size: contain;
 }
 
 #video{
-    background-color: black;
+    background: url(images/video.jpg) no-repeat center;
+    background-size: contain;
 }
 
 #sound{
-    background-color: black;
+    background: url(images/sound.jpg) no-repeat center;
+    background-size: contain;
 }
 
 #contact{
-    background-color: black;
+    background: black;
 }
 
-
-
+article{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 200px;
+    text-align: center;
+}
 
 
 
