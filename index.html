@@ -27,16 +27,26 @@
         <h2>HOME</h2>
     </section>
     <section id="photography">
-        <h2>PHOTOGRAPHY</h2>
+        <a href="photography.html"><h2>PHOTOGRAPHY</h2></a>
     </section>
     <section id="video">
-        <h2>GENERATIVE VIDEO</h2>
+        <a href="video.html"><h2>GENERATIVE VIDEO</h2></a>
     </section>
     <section id="sound">
-        <h2><a href="sound.html">SOUND</a></h2>
+        <a href="sound.html"><h2>SOUND</h2></a>
     </section>
     <section id="contact">
-        <h2>CONTACT</h2>
+        <div class="container">
+            <h2>CONTACT</h2>
+            <form action="" method="get">
+                <label for="name"></label><input type="text" name="name" placeholder="Name" required><br>
+                <label for="email"></label><input type="email" name="email" placeholder="Email" required><br>
+                <label for="subject"></label><input type="text" name="subject" placeholder="Subject" required><br>
+                <label for="body"></label><textarea name="body" placeholder="Message" rows="4" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
