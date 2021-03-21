@@ -73,13 +73,19 @@ header h1 {
 }
 header .menu{
     display: flex;
+    overflow: hidden;
 }
 header .menu li{
     list-style: none;
     margin-left: 10px;
     margin-right: 10px;
 }
-header .menu-btn{
+.menu a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.menu .icon{
     display: none;
     font-size: 20px;
 }
@@ -111,6 +117,8 @@ input, textarea {
     font-family: sans-serif;
     width: 100%;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     resize: vertical;
@@ -119,7 +127,9 @@ button {
     display: flex;
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -141,11 +151,24 @@ footer p{
 
 /* media queries */
 @media screen and (max-width: 992px) {
-    header .menu{
+    .menu a {
         display: none;
+      }
+    .menu .icon {
+      float: right;
+      display: block;
     }
-    
-    header .menu-btn{
-        display: block;
-    }
+}
+@media screen and (max-width: 992px) {
+    .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
