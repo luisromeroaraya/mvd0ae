@@ -1,10 +1,8 @@
 function toggleMenu() {
-    if (menu.className === "menu") {
-        menu.className += " responsive";
-    } else {
-        menu.className = "menu";
-    }
+    menu.classList.toggle("responsive");
+    icon.classList.toggle("fa-times");
+    icon.classList.toggle("fa-bars");
 }
   
-icon.addEventListener("click", toggleMenu);
+menubtn.addEventListener("click", toggleMenu);
 
