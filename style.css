@@ -112,6 +112,19 @@ a:hover{
     flex: 1;
     margin: 10px;
 }
+.gallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.gallery img{
+    width: 300px;
+    height: auto;
+    transition: all 0.2ms ease;
+}
+.gallery img:hover{
+    border: solid 1px white;
+}
 
 /* contact section */
 input, textarea {
