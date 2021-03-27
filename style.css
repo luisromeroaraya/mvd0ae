@@ -136,9 +136,6 @@ a:hover{
     flex-grow: 1;
     transition: all 0.2ms ease;
 }
-.galleryVideo iframe:hover{
-    border: solid 1px white;
-}
 
 /* contact section */
 input, textarea {
